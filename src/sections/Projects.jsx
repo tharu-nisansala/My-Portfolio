@@ -1,5 +1,9 @@
 import React from 'react';
+<<<<<<< HEAD
 import portImg from '../assets/port.png';
+=======
+import portfolioImg from '../assets/portfolio.png';
+>>>>>>> de62a316b651deb886dd8c55580cbe3513feed41
 import food from '../assets/food.png';
 import fashion from '../assets/fashion.png';
 import fd from '../assets/fd.jpg';
@@ -11,7 +15,11 @@ import { FaRegArrowAltCircleRight } from "react-icons/fa";
 const Individualprojects = [
   {
     id: 1,
+<<<<<<< HEAD
     img: portImg,
+=======
+    img: portfolioImg,
+>>>>>>> de62a316b651deb886dd8c55580cbe3513feed41
     title: "Portfolio Website",
     description: "A personal portfolio to showcase my projects and skills.",
     techStack: ["React", "Tailwind CSS", "Vite"],
