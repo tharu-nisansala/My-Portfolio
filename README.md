@@ -57,7 +57,7 @@ npm run build
 ```
 ---
 ## 🌐 Live Demo
-🔗 View Portfolio: https://your-vercel-link.vercel.app
+🔗 View Portfolio: [https://your-vercel-link.vercel.app](https://tharushi-nisansala-portfolio.vercel.app/)
 
 ---
 ## 👩‍💻 About Me
