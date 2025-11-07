@@ -1,5 +1,5 @@
 import React from 'react';
-import portImg from '../assets/port.png';
+import portImg from '../assets/Port.png';
 import food from '../assets/food.png';
 import fashion from '../assets/fashion.png';
 import fd from '../assets/fd.jpg';
