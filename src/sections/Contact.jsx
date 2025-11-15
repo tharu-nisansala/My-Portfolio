@@ -18,10 +18,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_x1krnfc",
-        "template_2v9cfjw",
-        form.current,
-        "S-7Vqwt_di_YbKGQl"
+      import.meta.env.VITE_SERVICE_ID,   // from .env
+      import.meta.env.VITE_TEMPLATE_ID,  // from .env
+      form.current,
+      import.meta.env.VITE_PUBLIC_KEY    // from .env
       )
       .then(
         () => {
