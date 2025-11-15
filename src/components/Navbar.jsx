@@ -1,73 +1,64 @@
-import React, { useState } from "react";
-import { CiMenuBurger } from "react-icons/ci";
-import { IoMdClose } from "react-icons/io";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useState } from 'react';
+
+const menuItems = [
+  { name: "Home", href: "#hero" },
+  { name: "About", href: "#about" },
+  { name: "Qualification", href: "#qualifications" },
+  { name: "Skills", href: "#skills" },
+  { name: "Projects", href: "#projects" },
+  { name: "Blogs", href: "#blogs" },
+  { name: "Contact", href: "#contact" },
+];
 
 function Navbar() {
-  const [open, setOpen] = useState(false);
-
-  const menuItems = [
-    { name: "Home", href: "#hero" },
-    { name: "About", href: "#about" },
-    { name: "Qualification", href: "#qualifications" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Blogs", href: "#blogs" },
-    { name: "Contact", href: "#contact" },
-  ];
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-black w-full fixed top-0 left-0 z-50 shadow-2xl">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 h-20 flex items-center justify-between">
-        {/* Logo */}
-        <div className="text-xl md:text-2xl text-amber-500 font-bold font-display">
-          Tniz
-        </div>
+    <nav className="bg-black w-full shadow-2xl fixed z-50">
+      <div className="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
 
-        {/* Hamburger */}
-        <button
-          className="md:hidden text-white"
-          onClick={() => setOpen(!open)}
-        >
-          {open ? <IoMdClose className="text-2xl" /> : <CiMenuBurger className="text-3xl" />}
-        </button>
+        {/* Logo */}
+        <h1 className="text-xl md:text-2xl  text-amber-500 font-semibold font-display">
+          Tniz
+          
+        </h1>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-12 text-white font-semibold">
-          {menuItems.map((item, idx) => (
-            <li key={idx} className="hover:text-amber-500 transition-colors duration-300">
-              <a href={item.href}>{item.name}</a>
+        <ul className="hidden md:flex space-x-6 text-white font-semibold text-lg">
+          {menuItems.map((item, index) => (
+            <li key={index}>
+              <a href={item.href} className="hover:text-amber-500 duration-200">
+                {item.name}
+              </a>
             </li>
           ))}
         </ul>
+
+        {/* Mobile Hamburger Button */}
+        <button
+          className="md:hidden text-white text-3xl"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? "✕" : "☰"}
+        </button>
       </div>
 
-      {/* Mobile Menu */}
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3 }}
-            className="md:hidden fixed top-20 left-0 w-full bg-[#0a0a10] z-40 overflow-y-auto max-h-[calc(100vh-5rem)]"
-          >
-            <ul className="flex flex-col text-center">
-              {menuItems.map((item, idx) => (
-                <li key={idx} className="border-b border-gray-700 last:border-none">
-                  <a
-                    href={item.href}
-                    onClick={() => setOpen(false)}
-                    className="block py-4 text-white hover:text-amber-500 transition-colors"
-                  >
-                    {item.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Mobile Menu (Dropdown) */}
+      {isOpen && (
+        <ul className="md:hidden bg-black text-white px-6 pb-4 space-y-4 font-semibold">
+          {menuItems.map((item, index) => (
+            <li key={index} className='border-b border-gray-700 last:border-none'>
+              <a
+                href={item.href}
+                onClick={() => setIsOpen(false)}
+                className="block py-1 hover:text-amber-500 duration-200 text-center"
+              >
+                {item.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
     </nav>
   );
 }
