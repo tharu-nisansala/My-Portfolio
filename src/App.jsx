@@ -1,22 +1,19 @@
-import React from 'react'
-import './App.css'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import Hero from './sections/Hero'
-import About from './sections/About'
-import Skills from './sections/Skills'
-import Projects from './sections/Projects'
-import Contact from './sections/Contact'
-import Qualification from './sections/Qualification'
-import Blogs from './sections/Blogs'
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './sections/Hero';
+import About from './sections/About';
+import Qualification from './sections/Qualification';
+import Skills from './sections/Skills';
+import Projects from './sections/Projects';
+import Blogs from './sections/Blogs';
+import Contact from './sections/Contact';
+import Footer from './components/Footer';
 
 function App() {
-  
-
   return (
     <>
-      <Navbar/>
-      <Hero/>
+      <Navbar />
+      <Hero />
       <About/>
       <Qualification/>
       <Skills/>
@@ -24,8 +21,8 @@ function App() {
       <Blogs/>
       <Contact/>
       <Footer/>
-    <>
-  )
+    </>
+  );
 }
 
-export default App
+export default App;
