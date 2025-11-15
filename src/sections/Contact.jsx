@@ -44,105 +44,92 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="bg-black py-5">
-      <h1 className="text-amber-500 text-center text-3xl md:text-4xl font-bold">
+    <section id="contact" className="bg-black py-10">
+      <h1 className="text-amber-500 text-center text-3xl md:text-4xl font-bold mb-15">
         Contact
       </h1>
 
-      <div className="max-w-6xl mx-auto md:px-3 px-8 py-10 text-white md:flex block justify-center items-center md:gap-10 lg:gap-16 xl:gap-20">
+      <div className="max-w-6xl mx-auto px-6 md:flex gap-16">
 
         {/* LEFT SIDE */}
-        <div className=" p-3 overflow-hidden min-h-[420px] ">
+       
           <motion.div
-            initial={{ opacity: 0, x: -60 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: false, amount: 0.3 }}
-            className="relative flex justify-center md:justify-start lg:min-w-[100px] "
-          >
-            <div className="rounded-3xl border border-black shadow-[0_0_10px_rgba(245,158,11,0.6)]">
-              <div className="rounded-3xl p-5 bg-[#0a0a10]">
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="md:w-1/2 mb-10 md:mb-0"
+        >
+          <p className="text-amber-500 font-bold mb-6">Reach Out via:</p>
+          <div className="space-y-4 text-lg">
+             <motion.a
+              whileHover={{ scale: 1.05 }}
+              href="mailto:tharushinisansala127@gmail.com"
+              className="flex items-center gap-3 hover:text-blue-500 transition-colors"
+            >
+              <MdEmail size={24} className="text-amber-500" />
+              <p className="font-bold text-white">tharushinisansala127@gmail.com</p>
+              
+            </motion.a>
 
-                <p className="text-amber-500 font-bold">Reach Out via:</p>
+             <motion.a
+              whileHover={{ scale: 1.05 }}
+              href="tel:+94758457044"
+              className="flex items-center gap-3 hover:text-green-500 transition-colors"
+            >
+              <BsFillTelephoneOutboundFill size={24} className="text-amber-500" />
+              <p className="font-bold text-white">+94 75 845 7044</p>
+            </motion.a>
 
-                <div className="p-2 flex items-center gap-8 mt-8">
-                  <BsFillTelephoneOutboundFill className="text-2xl ml-3" />
-                  <span>
-                    <p className="font-bold text-white">Mobile Number</p>
-                    <span className="text-amber-500">0758457044</span>
-                  </span>
-                </div>
+             <motion.a
+              whileHover={{ scale: 1.05 }}
+              href="https://github.com/tharu-nisansala"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 hover:text-gray-400 transition-colors"
+            >
+              <FaGithub size={24} className="text-amber-500" />
+               <p className="font-bold text-white">Github</p>
+            </motion.a>
 
-                <div className="p-2 flex items-center gap-8 mt-3">
-                  <MdEmail className="text-2xl ml-3" />
-                  <span>
-                    <p className="font-bold text-white">Email</p>
-                    <a
-                      href="mailto:tharushinisansala127@gmail.com"
-                      className="text-amber-500 hover:text-amber-400 transition-colors duration-300"
-                    >
-                      tharushinisansala127@gmail.com
-                    </a>
-                  </span>
-                </div>
-
-                <div className="p-2 flex items-center gap-8 mt-3">
-                  <FaGithub className="text-2xl ml-3" />
-                  <a
-                    href="https://github.com/tharu-nisansala"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-200 hover:text-fuchsia-300 no-underline"
-                  >
-                    <p className="font-bold text-white">Github</p>
-                    <span className="text-amber-500 hover:text-amber-400">
-                      https://github.com/tharu-nisansala
-                    </span>
-                  </a>
-                </div>
-
-                <div className="p-2 flex items-center gap-8 mt-3">
-                  <FaLinkedin className="text-2xl ml-3" />
-                  <a
-                    href="https://www.linkedin.com/in/tharushi-nisansala-5818982a6"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-200 hover:text-fuchsia-300"
-                  >
-                    <p className="font-bold text-white">LinkedIn</p>
-                    <span className="text-amber-500 hover:text-amber-400">
-                      https://www.linkedin.com/in/tharushi-nisansala-5818982a6
-                    </span>
-                  </a>
-                </div>
-
-              </div>
-            </div>
-          </motion.div>
-        </div>
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              href="https://www.linkedin.com/in/tharushi-nisansala-5818982a6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 hover:text-blue-400 transition-colors"
+            >
+              <FaLinkedin size={24} className="text-amber-500" />
+              <p className="font-bold text-white">LinkedIn</p>
+            </motion.a>
+          </div>
+        </motion.div>         
 
         {/* RIGHT SIDE */}
-        <div className="p-3 overflow-hidden min-h-[650px] min-w-[550px] flex justify-center md:mt-0 mt-10">
+       
           <motion.div
-            initial={{ opacity: 0, x: 60 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-            viewport={{ once: false, amount: 0.3 }}
-            className="max-w-2xl min-h-[300px]"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.3 }}
+          className="md:w-1/2 mb-10 md:mb-0"
+        >
+            <p className="text-amber-500 font-bold mb-6">
+            Or send me a quick message using the contact form below
+          </p>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="rounded-3xl border border-black shadow-[0_0_10px_rgba(245,158,11,0.6)]"
           >
-            <div className="p-1 rounded-3xl border-1 border-black shadow-[0_0_10px_rgba(245,158,11,0.6)] mt-10">
-              <div className="rounded-3xl p-8 bg-[#0a0a10]">
-                <p className="text-amber-500 font-bold mb-10">
-                  Or send me a quick message using the contact form below
-                </p>
-
-                <form ref={form} onSubmit={sendEmail}>
+             <div className="rounded-3xl p-8 bg-[#0a0a10]">
+                <form ref={form} onSubmit={sendEmail} className="space-y-4">
 
                   <input
                     type="text"
                     name="name"
                     placeholder="Your Name"
-                    className="px-5 py-3 w-full border-1 rounded-sm focus:outline-none focus:ring-1 focus:ring-amber-500 focus:text-white"
+                    className="w-full px-5 py-3 rounded-sm bg-black text-white border focus:outline-none focus:ring-amber-500"
+                    required
                   />
                   <br />
                   <br />
@@ -151,7 +138,8 @@ function Contact() {
                     type="email"
                     name="email"
                     placeholder="Your Email"
-                    className="px-5 py-3 w-full border-1 rounded-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:text-white"
+                    className="w-full px-5 py-3 rounded-sm bg-black text-white border focus:outline-none focus:ring-amber-500"
+                    required
                   />
                   <br />
                   <br />
@@ -160,7 +148,8 @@ function Contact() {
                     type="text"
                     name="subject"
                     placeholder="Subject"
-                    className="px-5 py-3 w-full border-1 rounded-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:text-white"
+                    className="w-full px-5 py-3 rounded-sm bg-black text-white border focus:outline-none focus:ring-amber-500"
+                    required
                   />
                   <br />
                   <br />
@@ -169,7 +158,8 @@ function Contact() {
                     name="message"
                     rows="5"
                     placeholder="Your Message"
-                    className="px-5 py-3 w-full border-1 rounded-sm resize-none focus:outline-none focus:ring-2 focus:ring-amber-500 focus:text-white"
+                    className="w-full px-5 py-3 rounded-sm bg-black text-white border focus:outline-none focus:ring-amber-500 resize-none"
+                    required
                   ></textarea>
 
                   <br />
@@ -193,10 +183,10 @@ function Contact() {
 
                 </form>
               </div>
-            </div>
           </motion.div>
+        </motion.div>
         </div>
-      </div>
+      
 
       {/* ALERT MODAL */}
       {alert.show && (
