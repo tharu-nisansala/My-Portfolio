@@ -15,8 +15,8 @@ const Individualprojects = [
     title: "Portfolio Website",
     description: "A personal portfolio to showcase my projects and skills.",
     techStack: ["React", "Tailwind CSS", "Vite"],
-    code: "https://github.com/yourusername/portfolio",
-    demo:"https://github.com/yourusername/portfolio",
+    code: "https://github.com/tharu-nisansala/My-Portfolio",
+    demo:"https://tharushi-nisansala-portfolio.vercel.app/",
   },
   {
     id: 2,
