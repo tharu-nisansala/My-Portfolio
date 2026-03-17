@@ -37,7 +37,7 @@ function Hero() {
         <h2 className="text-2xl md:text-4xl font-semibold mb-4 ">
           | {positions[index]} |
         </h2>
-         <a href="../public/Tharushi_Nisansala_CV.pdf" download>
+        <a href="/Tharushi_Nisansala_CV.pdf" download>
           <button className="bg-amber-600 rounded-3xl md:px-8 md:py-3 px-4 py-3 border border-amber-600 font-semibold text-sm md:text-xl hover:scale-105 transition duration-300 mt-4">
             Download Resume
           </button>
