@@ -98,7 +98,7 @@ function Skills() {
 
 
   return (
-    <section id="skills" className="bg-black py-10 md:px-3 px-6">
+    <section id="skills" className="bg-black py-10 md:px-3">
       <h1 className="text-amber-500 text-center text-3xl md:text-4xl font-bold mb-8">Skills</h1>
 
       <div className="max-w-6xl mx-auto px-4">
