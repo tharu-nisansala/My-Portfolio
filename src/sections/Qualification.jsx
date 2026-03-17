@@ -14,7 +14,7 @@ function Qualification() {
   ];
 
   return (
-    <section id="qualifications" className="bg-black text-white py-8 px-6 md:px-16 ">
+    <section id="qualifications" className="bg-black text-white py-16 px-6 md:px-16 ">
     <div className="mx-auto max-w-6xl">
       {/* Section Title */}
       <div className="overflow-hidden">
