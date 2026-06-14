@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import { FaJava, FaReact,  FaJs, FaHtml5, FaCss3Alt, FaBootstrap, FaNodeJs, FaGitAlt, FaGithub, FaFigma } from "react-icons/fa";
+import { FaJava, FaReact,  FaJs, FaHtml5, FaCss3Alt, FaBootstrap, FaNodeJs, FaGitAlt, FaGithub, FaFigma, FaCloud } from "react-icons/fa";
 import { SiTailwindcss, SiVite, SiExpress, SiMongodb, SiMysql, SiFirebase, SiAdobephotoshop, SiPostman, SiSpringboot,SiNextdotjs } from "react-icons/si";
 import { MdCode, MdDeveloperMode } from 'react-icons/md';
-import { SiTypescript, SiIntellijidea, SiPython,SiAmazon,SiAzure } from "react-icons/si";
+import { SiTypescript, SiIntellijidea, SiPython,SiAmazon } from "react-icons/si";
 
 
 const skillsData = [
@@ -65,7 +65,7 @@ const skillsData = [
     category: "Cloud Platform",
     skills: [
       {name: "AWS (EC2, S3 - Basic)", icon: <SiAmazon />, level: 50 },
-      {name: "Microsoft Azure", icon: <SiAzure />, level: 50 },
+      {name: "Microsoft Azure", icon: <FaCloud />, level: 50 },
     ],
   },
   {
