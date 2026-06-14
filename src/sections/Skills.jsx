@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { FaJava, FaReact,  FaJs, FaHtml5, FaCss3Alt, FaBootstrap, FaNodeJs, FaGitAlt, FaGithub, FaFigma } from "react-icons/fa";
 import { SiTailwindcss, SiVite, SiExpress, SiMongodb, SiMysql, SiFirebase, SiAdobephotoshop, SiPostman, SiSpringboot,SiNextdotjs } from "react-icons/si";
 import { MdCode, MdDeveloperMode } from 'react-icons/md';
-import { SiTypescript, SiIntellijidea } from "react-icons/si";
+import { SiTypescript, SiIntellijidea, SiPython,SiAmazonaws,SiMicrosoftazure  } from "react-icons/si";
 
 
 const skillsData = [
@@ -12,7 +12,8 @@ const skillsData = [
       { name: "Java", icon: <FaJava />, level: 80 },
       { name: "JavaScript", icon: <FaJs />, level: 85 },
       { name: "TypeScript", icon: <SiTypescript />, level: 60 },
-
+      { name: "Python", icon: <SiPython />, level: 60 },    
+  
       
     ],
   },
@@ -58,6 +59,13 @@ const skillsData = [
     skills: [
       { name: "Figma", icon: <FaFigma />, level: 80 },
       { name: "Adobe Photoshop", icon: <SiAdobephotoshop />, level: 70 },
+    ],
+  },
+   {
+    category: "Cloud Platform",
+    skills: [
+      {name: "AWS (EC2, S3 - Basic)", icon: <SiAmazonaws />, level: 50 },
+      {name: "Microsoft Azure", icon: <SiMicrosoftazure />, level: 50 },
     ],
   },
   {
