@@ -18,7 +18,7 @@ const menuItems = [
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // ✅ ACTIVE SECTION HOOK
+  // ACTIVE SECTION HOOK
   const activeSection = useActiveSection(
     menuItems.map((item) => item.href)
   );
@@ -42,7 +42,7 @@ function Navbar() {
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-14">
           {menuItems.map((item, index) => {
-            const isActive = activeSection === item.href; // ✅ ONLY ACTIVE LOGIC
+            const isActive = activeSection === item.href; // ONLY ACTIVE LOGIC
 
             return (
               <motion.li
@@ -99,7 +99,7 @@ function Navbar() {
       >
         <ul className="space-y-4 text-center font-semibold py-4">
           {menuItems.map((item, index) => {
-            const isActive = activeSection === item.href; // ✅ ACTIVE FIX
+            const isActive = activeSection === item.href; // ACTIVE FIX
 
             return (
               <li key={index}>
