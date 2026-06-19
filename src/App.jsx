@@ -10,6 +10,7 @@ import Contact from './sections/Contact';
 import Footer from './components/Footer';
 
 function App() {
+
   return (
     <>
       <Navbar />
@@ -21,6 +22,7 @@ function App() {
       <Blogs/>
       <Contact/>
       <Footer/>
+      
     </>
   );
 }

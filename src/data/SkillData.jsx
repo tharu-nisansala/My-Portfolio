@@ -1,0 +1,80 @@
+import React, { useEffect } from "react";
+import { FaJava, FaReact,  FaJs, FaHtml5, FaCss3Alt, FaBootstrap, FaNodeJs, FaGitAlt, FaGithub, FaFigma, FaCloud } from "react-icons/fa";
+import { SiTailwindcss, SiVite, SiExpress, SiMongodb, SiMysql, SiFirebase, SiAdobephotoshop, SiPostman, SiSpringboot,SiNextdotjs } from "react-icons/si";
+import { MdCode, MdDeveloperMode } from 'react-icons/md';
+import { SiTypescript, SiIntellijidea,SiPython, SiAmazon,} from "react-icons/si";
+
+
+const skillsData = [
+  {
+    category: "Programming Languages",
+    skills: [
+      { name: "Java", icon: <FaJava />, level: 80 },
+      { name: "JavaScript", icon: <FaJs />, level: 85 },
+      { name: "TypeScript", icon: <SiTypescript />, level: 60 }, 
+      { name: "Python", icon: <SiPython />, level: 60 }, 
+    ],
+  },
+  {
+    category: "Frontend Development",
+    skills: [
+      { name: "React.js", icon: <FaReact />, level: 75 },
+      { name: "HTML5", icon: <FaHtml5 />, level: 95 },
+       { name: "Next.js", icon: <SiNextdotjs />, level: 60 },
+       { name: "React Native", icon: <FaReact />, level: 50 },
+      { name: "CSS3", icon: <FaCss3Alt />, level: 90 },
+      { name: "Tailwind CSS", icon: <SiTailwindcss />, level: 85 },
+      { name: "Bootstrap", icon: <FaBootstrap />, level: 80 },
+      { name: "Vite", icon: <SiVite />, level: 75 },
+      { name: "JSP", icon: <FaJs />, level: 65 },
+    ],
+  },
+  {
+    category: "Backend Development",
+    skills: [
+      { name: "Node.js", icon: <FaNodeJs />, level: 75 },
+      { name: "Express.js", icon: <SiExpress />, level: 70 },
+       { name: "Spring Boot", icon: <SiSpringboot />, level: 65 },
+    ],
+  },
+  {
+    category: "Databases",
+    skills: [
+      { name: "MongoDB", icon: <SiMongodb />, level: 80 },
+      { name: "MySQL", icon: <SiMysql />, level: 75 },
+      { name: "Firebase", icon: <SiFirebase />, level: 65 },
+    ],
+  },
+  {
+    category: "Version Control",
+    skills: [
+      { name: "Git", icon: <FaGitAlt />, level: 85 },
+      { name: "GitHub", icon: <FaGithub />, level: 85 },
+    ],
+  },
+  {
+    category: "UI/UX Design",
+    skills: [
+      { name: "Figma", icon: <FaFigma />, level: 80 },
+      { name: "Adobe Photoshop", icon: <SiAdobephotoshop />, level: 70 },
+    ],
+  },
+  {
+    category: "Cloud Platform",
+    skills: [
+      {name: "AWS (EC2, S3 - Basic)", icon: <SiAmazon />, level: 50 },
+      {name: "Microsoft Azure", icon: <FaCloud />, level: 50 },
+    ],
+  },
+  {
+    category: "Other Tools",
+    skills: [
+      { name: "NetBeans IDE", icon: <MdCode />, level: 80 }, 
+      { name: "Visual Studio Code", icon: <MdDeveloperMode />, level: 90 },
+      { name: "Postman", icon: <SiPostman />, level: 80 },
+      { name: "IntelliJ IDEA", icon: <SiIntellijidea />, level: 85 },
+    ],
+  },
+];
+
+export { skillsData };
