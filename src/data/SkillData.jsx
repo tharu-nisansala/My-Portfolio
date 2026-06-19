@@ -62,8 +62,8 @@ const skillsData = [
   {
     category: "Cloud Platform",
     skills: [
-      {name: "AWS (EC2, S3 - Basic)", icon: <SiAmazon />, level: 50 },
-      {name: "Microsoft Azure", icon: <FaCloud />, level: 50 },
+      {name: "AWS (EC2, S3 - Basic)", icon: <SiAmazon />, level: 30 },
+      {name: "Microsoft Azure", icon: <FaCloud />, level: 30 },
     ],
   },
   {
