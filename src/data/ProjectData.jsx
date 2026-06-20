@@ -8,6 +8,7 @@ import RealStateWebImg from '../assets/RealState.png';
 import mobileAppImg from '../assets/mb.png';
 import nextWebImg from '../assets/next.png';
 import LMSimg from '../assets/LMS.png';
+import SentimentAnalysis from '../assets/SentimentAnalysis.png';
 
 const Individualprojects = [
   {
@@ -29,6 +30,14 @@ const Individualprojects = [
   },
   {
     id: 3,
+    img: SentimentAnalysis,
+    title: "Sentiment Analysis Web Application",
+    description: "A simple web-based Sentiment Analysis application built using Python and Flask. This project allows users to enter text reviews and classifies them as Positive or Negative using a Machine Learning model.",
+    techStack: ["Python", "Flask ", "HTML", "NumPy & Pandas","NLTK","Pickle"],
+    code: "https://github.com/tharu-nisansala/sentiment_analysis_project",
+  },
+  {
+    id: 4,
     img: DormAndDineWebImg,
     title: "Food Order Website",
     description: "An online food ordering platform that lets users browse menus, customize meals, and place orders from local restaurants.",
@@ -37,7 +46,7 @@ const Individualprojects = [
     demo:"https://www.linkedin.com/posts/tharushi-nisansala-5818982a6_webdevelopment-foodtech-html-activity-7185493802755784704-G10z?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEnQUjEBk-UHrKJ5c8WndsrwJe289Xc3UEU",
   },
   {
-    id: 4,
+    id: 5,
     img: fashionWebImg,
     title: "FashionHub Website",
     description: "e-commerce website for ordering clothes",
