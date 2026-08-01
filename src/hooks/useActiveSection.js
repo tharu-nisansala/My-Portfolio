@@ -17,7 +17,7 @@ const useActiveSection = (sectionIds = []) => {
         });
       },
       {
-        threshold: 0.6, // 60% visible → active
+        threshold: 0.2, // 20% visible → active
       }
     );
 
